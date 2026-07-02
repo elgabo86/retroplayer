@@ -1,20 +1,20 @@
 # RetroPlayer
 
-Lecteur de musiques rétro avec interface TUI (Terminal User Interface).
+Retro music player with a TUI (Terminal User Interface).
 
-## Fonctionnalités
+## Features
 
-- Interface utilisateur dans le terminal (TUI)
-- Recherche en temps réel des fichiers musicaux
-- Navigation fluide avec les flèches du clavier
-- Téléchargement et lecture automatique des fichiers
-- Base de données locale dans `~/.cache/retroplayer`
-- Support de 25 formats de musiques rétro
+- Terminal user interface (TUI)
+- Real-time search for music files
+- Smooth keyboard navigation
+- Automatic download and playback
+- Local database in `~/.cache/retroplayer`
+- Support for 25 retro music formats
 
-## Dépendances
+## Dependencies
 
-- **zxtune-qt** : lecteur de musiques rétro (requis pour la lecture)
-- **7z** : extraction des archives (p7zip-full)
+- **zxtune-qt** : retro music player (required for playback)
+- **7z** : archive extraction (p7zip-full)
 
 ## Installation
 
@@ -22,31 +22,31 @@ Lecteur de musiques rétro avec interface TUI (Terminal User Interface).
 curl -fsSL https://raw.githubusercontent.com/elgabo86/retroplayer/main/install.sh | bash
 ```
 
-## Utilisation
+## Usage
 
 ```bash
-retroplayer --update   # Mettre à jour la base de données (première utilisation)
-retroplayer            # Lancer l'interface
-retroplayer --help     # Afficher l'aide
+retroplayer --update   # Update database (first use)
+retroplayer            # Launch the interface
+retroplayer --help     # Show help
 ```
 
 ## Navigation
 
-- **Flèches ↑↓** : Naviguer dans la liste
-- **Gauche/Droite** : Sauter de 5 entrées
-- **Entrée** : Jouer le fichier sélectionné
-- **ESC** : Annuler le téléchargement / Quitter
-- **Ctrl+C** : Quitter
-- **Ctrl+U** : Effacer la recherche
-- **Backspace** : Effacer un caractère
-- **Saisie texte** : Recherche en temps réel
+- **Arrow keys ↑↓** : Browse the list
+- **Left/Right** : Jump 5 entries
+- **Enter** : Play selected file
+- **ESC** : Cancel download / Quit
+- **Ctrl+C** : Quit
+- **Ctrl+U** : Clear search
+- **Backspace** : Delete last character
+- **Text input** : Real-time search
 
-## Formats supportés
+## Supported formats
 
 SPC (SNES), NSF (NES), USF (N64), SMD (Genesis), PSF (PS1), PSF2 (PS2), PSF3 (PS3),
 PSF4 (PS4), GBS (Game Boy), GSF (GBA), 2SF (NDS), 3SF (3DS), DSF (Dreamcast),
 Wii, WiiU, GCN, SWITCH, SSF (Saturn), Xbox, X360, PSP, VITA, PC, 3DO
 
-## Licence
+## License
 
 MIT
