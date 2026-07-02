@@ -139,12 +139,12 @@ func main() {
 	// Initialiser la base de données
 	initDB(db)
 
-	// Vérifier si la base de données est vide
+	// Vérifier si la base de données est vide et la peupler automatiquement
 	count := 0
 	err = db.QueryRow("SELECT COUNT(*) FROM files").Scan(&count)
 	if err != nil || count == 0 {
-		fmt.Println("Base de données vide. Veuillez lancer 'retroplayer --update' pour la peupler.")
-		os.Exit(1)
+		fmt.Println("Base de données vide, mise à jour automatique en cours...")
+		updateCache(db)
 	}
 
 	// Charger tous les fichiers
