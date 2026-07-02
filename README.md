@@ -1,6 +1,7 @@
 # RetroPlayer
 
-Retro music player with a TUI (Terminal User Interface).
+TUI to browse and search retro video game soundtracks from [joshw.info](https://joshw.info) archives,
+and launch them with [ZXTune](https://zxtune.bitbucket.io/).
 
 ## Features
 
@@ -13,7 +14,7 @@ Retro music player with a TUI (Terminal User Interface).
 
 ## Dependencies
 
-- **zxtune-qt** : retro music player (required for playback)
+- **zxtune-qt** : chiptune player for playback
 - **7z** : archive extraction (p7zip-full)
 
 ## Installation
